@@ -1,5 +1,5 @@
 # Ex. No: 10 – Packet Tracer: Subnetting Scenario
-# Date: ___________
+# Date: 17-11-2025
 ________________________________________<br>
 # Objective
 Design, configure, and verify an IPv4 subnetting scheme in Cisco Packet Tracer.<br>
@@ -17,7 +17,7 @@ ________________________________________<br>
 •	Serial DCE/DTE cable for WAN link<br>
 ________________________________________
 # Network Topology Diagram
-(Insert your Packet Tracer screenshot showing R1 ↔ R2 serial link, each router connected to two switches with PCs attached.)<br>
+<img width="1919" height="1023" alt="Screenshot 2025-11-17 143548" src="https://github.com/user-attachments/assets/fc238d2d-1f25-4bc1-8f7d-16058293f051" /><br>
 ________________________________________
 # Addressing Table
 Device	Interface	IP Address	Subnet Mask	Default Gateway<br>
@@ -35,7 +35,7 @@ PC1	NIC	(Last host of Subnet 0)	(Mask)	R1 G0/0<br>
 PC2	NIC	(Last host of Subnet 1)	(Mask)	R1 G0/1<br>
 PC3	NIC	(Last host of Subnet 2)	(Mask)	R2 G0/0<br>
 PC4	NIC	(Last host of Subnet 3)	(Mask)	R2 G0/1<br>
-________________________________________<br>
+<br>________________________________________
 # Procedure
 # Part 1: Subnet the Assigned Network
 1.	Start with network: 192.168.100.0/24.<br>
@@ -47,7 +47,7 @@ o	Subnet 1 → LAN (R1 G0/1)<br>
 o	Subnet 2 → LAN (R2 G0/0)<br>
 o	Subnet 3 → LAN (R2 G0/1)<br>
 o	Subnet 4 → WAN (R1–R2 Serial link)<br>
-________________________________________<br>
+<br>________________________________________
 # Part 2: Configure the Devices
 Router R1<br>
 enable<br>
@@ -113,7 +113,11 @@ ________________________________________<br>
 ________________________________________<br>
 # Output (Attach Screenshots)
 •	show ip interface brief on R1 and R2<br>
-•	Successful pings PC ↔ PC<br>
+<img width="873" height="878" alt="Screenshot 2025-11-17 143630" src="https://github.com/user-attachments/assets/1f776d4f-d781-4a5a-a06d-5865dc5e29a0" />
+
+•	Successful pings PC ↔ PC
+<img width="1919" height="1015" alt="image" src="https://github.com/user-attachments/assets/d9258c3f-1eb0-4cfb-b946-d0a242761c87" />
+<br>
 ________________________________________<br>
 # Result
 The IPv4 subnetting scheme was successfully designed and implemented. Routers, switches, and PCs were configured with correct addressing. Connectivity within LANs and across WAN was verified.
